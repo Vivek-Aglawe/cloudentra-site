@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloudentra – Find the job, fix the resume, get hired</title>
+<meta name="description" content="Cloudentra gathers jobs from India and remote roles worldwide, scores your resume for ATS, and tells you exactly what to fix. Built for freshers and experienced candidates.">
+<style>
+:root{--bg:#f2f6fa;--surface:#fff;--ink:#0e1b2c;--muted:#52627a;--line:#d9e2ec;--accent:#0b6e7a;--accent-ink:#fff;--warn:#b45309;--good:#15803d;--warnbg:#fdf3e2;--goodbg:#e6f4ea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1522;--surface:#122134;--ink:#e8eef6;--muted:#9db0c7;--line:#223650;--accent:#49c2cf;--accent-ink:#06222a;--warn:#f0b35a;--good:#6fd08c;--warnbg:#2a2210;--goodbg:#0f2a1a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}
+.logo span{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:48px 0 72px}
+h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.08;letter-spacing:-.03em;margin:0 0 18px}
+.lead{color:var(--muted);font-size:1.15rem;max-width:34em;margin:0 0 28px}
+.note{color:var(--muted);font-size:.95rem;margin-top:14px}
+.score{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 18px 40px -22px rgba(14,27,44,.35)}
+.score h2{font-size:.95rem;margin:0 0 16px;color:var(--muted);font-weight:600}
+.meters{display:flex;gap:22px;margin-bottom:18px}
+.meter{flex:1}
+.meter b{display:block;font-size:2.1rem;line-height:1;letter-spacing:-.02em}
+.meter small{color:var(--muted)}
+.bar{height:8px;border-radius:99px;background:var(--line);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.fix{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fix li{padding:10px 12px;border-radius:8px;font-size:.95rem}
+.fix .w{background:var(--warnbg);border-left:4px solid var(--warn)}
+.fix .g{background:var(--goodbg);border-left:4px solid var(--good)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2.sec{font-size:clamp(1.6rem,3.5vw,2.2rem);letter-spacing:-.02em;line-height:1.15;margin:0 0 12px}
+.sub{color:var(--muted);max-width:38em;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid h3{margin:0 0 6px;font-size:1.15rem}
+.grid p{margin:0;color:var(--muted)}
+ol.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+ol.steps li{counter-increment:s;padding-top:14px;border-top:3px solid var(--accent)}
+ol.steps li::before{content:"Step " counter(s);display:block;color:var(--accent);font-weight:700;font-size:.9rem;margin-bottom:4px}
+ol.steps b{display:block;margin-bottom:4px}
+ol.steps span{color:var(--muted);font-size:.97rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.two div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.two h3{margin:0 0 8px}
+.two p{margin:0;color:var(--muted)}
+.cta{text-align:center}
+.cta .sub{margin-left:auto;margin-right:auto}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.93rem;border-top:1px solid var(--line)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding-top:24px}.grid,.two{grid-template-columns:1fr}ol.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){ol.steps{grid-template-columns:1fr}.meters{gap:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top">Cloud<span>entra</span></a>
+    <a class="btn" href="mailto:abc@cloudentra.me?subject=Early%20access">Get early access</a>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <h1>Find the job. Fix your resume. Get hired.</h1>
+        <p class="lead">Cloudentra gathers openings from across India and remote roles worldwide, checks your resume against what hiring software looks for, and shows exactly what to change. All in one place, for freshers and experienced candidates.</p>
+        <a class="btn" href="mailto:abc@cloudentra.me?subject=Early%20access">Join the early access list</a>
+        <p class="note">Launching soon. Email us and we will tell you when it is ready.</p>
+      </div>
+
+      <div class="score" aria-label="Sample resume report">
+        <h2>Sample resume report</h2>
+        <div class="meters">
+          <div class="meter"><b>72</b><small>Resume score</small><div class="bar"><i style="width:72%"></i></div></div>
+          <div class="meter"><b>64</b><small>ATS-friendly score</small><div class="bar"><i style="width:64%"></i></div></div>
+        </div>
+        <ul class="fix">
+          <li class="w">Add the keywords “SQL” and “REST APIs” found in this job post.</li>
+          <li class="w">Replace the two-column layout; many ATS tools misread it.</li>
+          <li class="w">Rewrite 3 bullet points to show results, not duties.</li>
+          <li class="g">Contact details and section headings are clear.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <section id="features">
+    <h2 class="sec">Everything a job search needs, in one place</h2>
+    <p class="sub">Stop jumping between job sites and resume checkers.</p>
+    <div class="grid">
+      <div><h3>Jobs from everywhere</h3><p>Openings from India and remote roles abroad, collected on one page, each with a link straight to the application.</p></div>
+      <div><h3>Resume score</h3><p>Upload your resume and see how it rates for the role you want, with plain-language feedback.</p></div>
+      <div><h3>ATS-friendly check</h3><p>Find out whether applicant tracking systems can read your resume, and what keeps it from getting through.</p></div>
+      <div><h3>What to change</h3><p>A short list of fixes ranked by impact, so you know what to edit first.</p></div>
+      <div><h3>What gets you hired</h3><p>See which skills and keywords a job asks for, and where your resume falls short.</p></div>
+      <div><h3>Direct apply links</h3><p>When your resume is ready, go straight to the employer’s application. No extra steps.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2 class="sec">How it works</h2>
+    <p class="sub">From upload to application in four steps.</p>
+    <ol class="steps">
+      <li><b>Upload your resume</b><span>PDF or Word.</span></li>
+      <li><b>Pick the roles you want</b><span>Fresher or experienced, India or remote.</span></li>
+      <li><b>Get your scores and fixes</b><span>Resume score, ATS score, and what to change.</span></li>
+      <li><b>Apply with confidence</b><span>Open the job link and apply.</span></li>
+    </ol>
+  </section>
+
+  <section id="who">
+    <h2 class="sec">Built for every stage</h2>
+    <p class="sub">Whether it is your first job or your next one.</p>
+    <div class="two">
+      <div><h3>Freshers</h3><p>No experience yet? See which skills and projects to highlight, and find entry-level and internship roles that fit.</p></div>
+      <div><h3>Experienced professionals</h3><p>Show your impact clearly, match the roles you are aiming for, and find openings in India or remote worldwide.</p></div>
+    </div>
+  </section>
+
+  <section class="cta" id="join">
+    <h2 class="sec">Be first to try Cloudentra</h2>
+    <p class="sub">Send us a short email to join the early access list.</p>
+    <a class="btn" href="mailto:abc@cloudentra.me?subject=Early%20access">abc@cloudentra.me</a>
+  </section>
+
+  <footer>© 2026 Cloudentra. All rights reserved.</footer>
+</div>
+</body>
+</html>
